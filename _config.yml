@@ -1,22 +1,21 @@
-title: finchers
-url: "https://github.com/finchers-rs/"
+title: Finchers
+description: Yet another Finch-inspired Web framework for Rust
+url: ""
 baseurl: ""
-theme: jekyll-theme-minimal
 
-source: ./
-
-exclude:
-  - target/
-  - tests/
-  - build.rs
-  - Cargo.toml
-  - Cargo.lock
-  - Gemfile
-  - Gemfile.lock
-  - generate.sh
-  - lib.rs
+theme: minima
 
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: rust
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+
+plugins:
+  - jekyll-feed
